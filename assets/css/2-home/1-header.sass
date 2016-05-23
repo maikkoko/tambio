@@ -1,0 +1,51 @@
+.header
+  height: 415px
+  background-color: black
+  background:
+    image: url("/assets/images/header.jpg")
+    size: cover
+
+  .title
+    color: white
+
+    .logo
+      position: relative
+      padding-top: 80px
+      padding-bottom: 20px
+
+      img
+        width: 32px
+        height: 32px
+        position: absolute
+        left: 50%
+        @include transform(translateX(-50%))
+
+    h1
+      margin: 5px
+      font-family: 'Quicksand'
+      letter-spacing: -2.67px
+      font-size: 40px
+      text-align: center
+
+    p
+      margin: 0px
+      // padding-left: 30px
+      // padding-right: 30px
+      font-size: 16px
+      line-height: 20px
+      text-align: center
+
+  div.action-button
+    position: relative
+    margin-top: 100px
+
+    a
+      position: absolute
+      left: 50%
+      @include transform(translateX(-50%))
+      text-decoration: none
+      color: white
+      font-size: 12px
+      border: 1px solid white
+      border-radius: 2px
+      padding: 5px 10px

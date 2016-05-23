@@ -1,0 +1,28 @@
+{
+  "name": "jekyll-starter-pack",
+  "version": "0.0.0",
+  "description": "A starter project including full setup for Jekyll, GulpJS, Jade, SASS & BrowserSync -- Based on devtips",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maikko Aleman",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "#"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync"
+  ]
+}
