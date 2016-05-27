@@ -1,34 +1,176 @@
 .how
+  position: relative
   background:
     color: $tambio-blue
+  padding-bottom: 10px
 
   h1.section-title
     color: white
 
-  .how-image
-    background:
-      position: center
-      size: cover
-    height: 225px
-    width: 100vw
-    margin-left: -30px
+  .how-content
+    .how-details
+      .how-image
+        margin-left: -10px
+        margin-right: -10px
+        margin-bottom: 30px
 
-  .how-description
-    margin: 0px
+        img
+          width: 100%
+          height: auto
 
-    h3
-      text-align: center
+      .how-description
+        margin: 0px
+
+        h3
+          text-align: center
+          color: white
+          font-size: 16px
+          text-transform: uppercase
+          line-height: 24px
+
+        p
+          font-family: 'Quicksand'
+          margin-top: 15px
+          color: rgba(255, 255, 255, 0.80)
+          text-align: center
+          font-size: 16px
+          line-height: 20px
+
+    .how-buttons
+      padding-bottom: 20px
+      margin: 10px auto 0
+      width: 260px
+      display: flex
+      justify-content: space-between
+
+      a
+        text-decoration: none
+        color: white
+
+        #button
+          opacity: 0.5
+
+          h3
+            display: none
+
+
+          .button-container
+            position: relative
+            width: 64px
+            height: 64px
+            border: 2px white solid
+            border-radius: 64px
+
+            i
+              font-size: 48px
+              position: absolute
+              top: 50%
+              left: 50%
+              transform: translate(-50%,-50%)
+
+      .active
+        opacity: 1 !important
+
+@media (min-width: 500px) and (max-width: 768px)
+  .how
+    .how-image
+      margin-left: -30px
+      margin-right: -30px
+      margin-bottom: 30px
+
+    .how-buttons
+      width: 300px
+
+@media (min-width: 768px)
+  .how
+    h1.section-title
+      position: absolute
+      left: 11%
+      font-size: 24px
+      top: 10px
+      // transform: translateX(-50%)
+
+    .how-content
+      display: flex
+      flex-direction: row-reverse
+      justify-content: space-between
+      padding-top: 10px
+
+      .how-details
+        width: calc(50% - 30px)
+
+        .how-image
+          margin-top: 20px
+
+        .how-description
+          h3
+            display: none
+
+          p
+            font-size: 18px
+
+      .how-buttons
+        display: block
+        width: calc(50% - 30px)
+        margin-left: 0px
+        margin-right: 0px
+        margin-top: 80px !important
+
+        a
+          #button
+            display: flex
+            padding-left: 10px
+            border-radius: 64px
+
+            h3
+              display: block
+              text-align: left
+              color: white
+              font-size: 18px
+              text-transform: uppercase
+              line-height: 24px
+              margin-left: 20px
+              margin-top: 20px
+
+            .button-container
+              // width: 72px
+              // height: 72px
+              // border-radius: 80px
+              margin-top: 10px
+              margin-bottom: 10px
+
+              i
+                font-size: 48px
+
+        .active
+          background-color: rgba(0, 0, 0, 0.1)
+
+@media (min-width: 1000px)
+  .how
+    height: calc(100vh - 100px)
+    padding-bottom: 60px
+
+    h1.section-title
+      top: 40px
+      left: 50%
       color: white
-      font-size: 14px
-      text-transform: uppercase
-      line-height: 17px
+      font-size: 32px
+      transform: translateX(-50%)
 
-    p
-      margin-top: 15px
-      color: rgba(255, 255, 255, 0.80)
-      text-align: center
-      font-size: 14px
-      line-height: 20px
+    .how-content
+      max-width: 1200px
+      margin-left: auto
+      margin-right: auto
+      padding-top: 8%
 
-  .how-buttons
-    padding-bottom: 20px
+      .how-buttons
+        margin-top: 80px !important
+        width: calc(42.5% - 30px)
+
+        #button
+
+          h3
+            padding-top: 10px
+
+          p
+            font-size: 24px

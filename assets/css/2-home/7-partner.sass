@@ -1,14 +1,75 @@
 .partner
-  background-color: $faded-bg
+  background-color: white
   padding-bottom: 20px
 
   h1.section-title
     color: rgba(0, 0, 0, 0.70)
 
-  .idea-img
-    height: 25px
-    background:
-      image: url("/assets/images/h2h-ideaspace.png")
-      size: auto 100%
-      position: center
-      repeat: no-repeat
+  ul.client-logos
+    position: relative
+    margin: 0
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+
+    li
+      margin: 15px 0 0 0
+      padding: 0
+      width: 100%
+      height: auto
+      list-style-type: none
+      display: block
+      opacity: 0.6
+
+      img
+        display: block
+        margin: 0 auto
+        max-width: 200px
+        max-height: 50px
+
+      &:first-child
+        margin-top: 0px
+
+@media (min-width: 500px)
+  .partner
+    ul.client-logos
+      li
+        width: 50%
+
+        &:nth-child(2)
+          margin: 0
+
+@media (min-width: 768px) and (max-width: 1199px)
+  .partner
+    padding-bottom: 30px
+
+    ul.client-logos
+      width: 80%
+      justify-content: center
+
+      li
+        width: auto
+        margin: 10px 40px 0px !important
+
+        img
+          max-width: 225px
+          max-height: 60px
+          
+@media (min-width: 1000px)
+  .partner
+    padding-bottom: 80px
+
+@media (min-width: 1200px)
+  .partner
+
+    ul.client-logos
+      width: 1100px
+      justify-content: center
+
+      li
+        width: auto
+        margin: 10px 30px 0px !important
+
+        img
+          max-width: 240px
+          max-height: 70px

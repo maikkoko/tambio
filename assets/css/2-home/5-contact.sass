@@ -7,28 +7,72 @@
     color: rgba(255, 255, 255, 0.90)
 
   .row
-    position: relative
-
     input[type=text]
-      height: 30px
-      width: 95%
+      height: 40px
       margin-bottom: 10px
+      border: none
+      width: 100%
+      box-sizing: border-box
+      border-radius: 5px
+
+      &::placeholder
+        opacity: 0.3
+        padding-left: 10px
+        font-family: 'Open Sans'
+        font-size: 16px
 
     input[type=submit]
-      color: white
-      font-size: 12px
+      color: rgba(255, 255, 255, 1)
+      font-size: 16px
       font-weight: bold
       background:
-        color: $tambio-blue
+        color: #66C2E0
       border: none
-      border-radius: 2px
+      border-radius: 5px
       padding: 10px
       display: block
       margin: 15px auto
 
+      &:hover
+        background:
+          color: #44B1C9
+        color: rgba(255, 255, 255, 0.86)
+
   textarea
     width: 100%
+    box-sizing: border-box
+    border: none
+    border-radius: 5px
+
+    &::placeholder
+      font-family: 'Open Sans'
+      font-size: 15px
+      padding-top: 10px
+      opacity: 0.3
+      padding-left: 8px
 
   textarea:focus, input[type=text]:focus
     outline-color: rgba(69, 158, 166, .90)
     box-shadow: 0 0 5px rgba(69, 158, 166, .90)
+
+@media (min-width: 840px)
+  .contact
+    .row
+
+      input[type=text]
+        width: 780px
+        display: block
+        margin-left: auto
+        margin-right: auto
+
+      textarea
+        width: 780px
+        display: block
+        margin-left: auto
+        margin-right: auto
+
+@media (min-width: 1000px)
+  .contact
+    .row
+      input[type=submit]
+        margin-bottom: 30px !important

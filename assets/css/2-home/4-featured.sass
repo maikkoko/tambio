@@ -1,35 +1,105 @@
 .featured
+  margin-top: 0px
+  background-color: $faded-bg
+
   h1
-    color: rgba(0, 0, 0, 0.80)
+    color: rgba(0, 0, 0, 0.60)
 
   ul
     padding: 0px
-    margin: 0px
+    margin: 0
 
-    li
-      margin: 0 0 10px 0
-      padding: 0 0 8px
-      list-style-type: none
-      border-bottom: solid 1px rgba(0, 0, 0, 0.05px)
+    a
+      text-decoration: none
 
-      &:last-child
-        border: none
+      li
+        margin-top: 20px
+        padding: 0 0 12px
+        list-style-type: none
+        border-bottom: solid 1px #aaaaaa
 
-      .image
-        background-color: pink
+        &:first-child
+          margin-top: 0px
+        &:last-child
+          border: none
+
+        .text
+          h3
+            font-family: 'Open Sans'
+            font-size: 16px
+            text-transform: uppercase
+            color: #66C2E0
+            margin: 0 0 5px
+            padding: 0
+            line-height: 24px
+            text-align: center
+
+          p
+            font-family: 'Quicksand'
+            font-size: 16px
+            color: #474747
+            margin: 0
+            padding: 0
+            line-height: 24px
+            text-align: center
+
+      &:hover
+        .text
+          h3
+            color: #55B1C9
+            font-size: 17px
+
+          p
+            text-decoration: underline
+
+
+@media (min-width: 500px)
+  ul
+    width: 100%
+    display: block
+    margin-left: auto !important
+    margin-right: auto !important
+
+    a
+      display: block
+      margin-left: auto !important
+      margin-right: auto !important
+      width: 80%
+      li
+        display: block
+        margin-left: auto !important
+        margin-right: auto !important
+        width: 80%
 
       .text
-        h3
-          font-size: 14px
-          text-transform: uppercase
-          color: rgba(0, 0, 0, 0.7)
-          margin: 0 0 8px
-          padding: 0
-          line-height: 17px
+        width: auto
+        margin: 0px
 
-        p
-          font-size: 14px
-          color: #474747
-          margin: 0
-          padding: 0
-          line-height: 20px
+@media (min-width: 768px)
+  ul
+    width: 100%
+    display: flex
+
+    li
+      width: calc(100%/3)
+      margin-top: 10px !important
+      border: none !important
+      margin-bottom: 20px
+
+      .text
+        max-width: 380px
+
+@media (min-width: 1000px)
+  .featured
+    ul
+      margin-top: 20px
+      li
+        .text
+          h3
+            font-size: 20px
+          p
+            font-size: 18px
+
+@media (min-width: 1200px)
+  ul
+    max-width: 1200px
