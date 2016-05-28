@@ -226,8 +226,8 @@ h1.section-title {
         position: absolute;
         left: 50%;
         -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%); }
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%); }
     .header .title .title-img {
       position: relative;
       padding-top: 45px; }
@@ -236,8 +236,8 @@ h1.section-title {
         position: absolute;
         left: 50%;
         -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%); }
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%); }
   .header .description p {
     color: white;
     margin: 0px;
@@ -334,8 +334,8 @@ section.subtitle {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 
 @media (min-width: 768px) {
   section.subtitle {
@@ -397,7 +397,9 @@ section.subtitle {
       text-decoration: none;
       color: white; }
       .how .how-content .how-buttons a #button {
-        opacity: 0.5; }
+        opacity: 0.5;
+        -webkit-transition: opacity 0.3s ease-in;
+        transition: opacity 0.3s ease-in; }
         .how .how-content .how-buttons a #button h3 {
           display: none; }
         .how .how-content .how-buttons a #button .button-container {
@@ -470,7 +472,10 @@ section.subtitle {
         display: flex;
         padding-left: 10px;
         -webkit-border-radius: 64px;
-                border-radius: 64px; }
+                border-radius: 64px;
+        background-color: transparent;
+        -webkit-transition: background-color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out; }
         .how .how-content .how-buttons a #button h3 {
           display: block;
           text-align: left;
@@ -485,8 +490,10 @@ section.subtitle {
           margin-bottom: 10px; }
           .how .how-content .how-buttons a #button .button-container i {
             font-size: 48px; }
-      .how .how-content .how-buttons .active {
-        background-color: rgba(0, 0, 0, 0.1); } }
+      .how .how-content .how-buttons a .active {
+        background-color: rgba(0, 0, 0, 0.1) !important; }
+      .how .how-content .how-buttons a:hover #button {
+        opacity: 0.9; } }
 
 @media (min-width: 1000px) {
   .how {
@@ -559,6 +566,7 @@ section.subtitle {
 
 @media (min-width: 500px) {
   ul {
+    height: 140px;
     width: 100%;
     display: block;
     margin-left: auto !important;
