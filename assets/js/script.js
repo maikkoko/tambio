@@ -34,7 +34,7 @@ var showHow = true;
 $(document).scroll( function() {
   var y = $(this).scrollTop();
 
-  console.log(y);
+  // console.log(y);
 
   // Subtitle
   if (y > 200) {
