@@ -2,13 +2,8 @@ section.how
   h1.section-title How does tambio work?
   
   div.how-content
-    div.how-details
-      div.how-image 
-        img(src="assets/images/app.png")
-          
-      div.how-description
-        h3 GET CUSTOMERS TO JOIN
-        p Quisque mollis, erat ac tincidunt convallis, massa arcu auctor dui, non lobortis diam lacus quis dolor. Donec facilisis quis tellus vel faucibus. 
+    div.how-details#how-details
+     
       
     div.how-buttons#how
       a(href='#', data-id='create')
@@ -26,3 +21,31 @@ section.how
           div.button-container
             i(class="icon ion-stats-bars")
           h3 VIEW RAFFLE ANALYTICS REALTIME
+      
+    
+    // Data content for buttons
+    
+    div(data-id='create').data
+      div.how-image 
+        img(src="/assets/images/app.png")
+          
+      div.how-description
+        h3 CREATE/ORGANIZE RAFFLE WITH TAMBIO
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin mollis lacus, eget semper massa malesuada ac. Mauris eleifend lectus et justo ultricies dapibus. Nunc tristique velit vitae lacinia interdum. Duis nec nulla congue, placerat lacus id, ultrices orci. Nullam arcu felis, fringilla ut feugiat non, tristique nec nisl.
+    
+    div(data-id='get').data
+      div.how-image 
+        img(src="/assets/images/app.png")
+          
+      div.how-description
+        h3 GET CUSTOMERS TO JOIN
+        p Quisque mollis, erat ac tincidunt convallis, massa arcu auctor dui, non lobortis diam lacus quis dolor. Donec facilisis quis tellus vel faucibus.
+
+
+      div(data-id='view').data
+        div.how-image 
+          img(src="/assets/images/app.png")
+            
+        div.how-description
+          h3 VIEW RAFFLE ANALYTICS REALTIME
+          p Sed dignissim eu odio sed interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non dapibus nisi. Praesent vel eleifend orci. Ut egestas fermentum mi in porta. Nulla et condimentum mauris. Cras ullamcorper risus quis vestibulum dapibus.

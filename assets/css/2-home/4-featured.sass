@@ -54,41 +54,43 @@
 
 
 @media (min-width: 500px)
-  ul
-    height: 140px
-    width: 100%
-    display: block
-    margin-left: auto !important
-    margin-right: auto !important
-
-    a
+  .featured
+    ul
+      width: 100%
       display: block
       margin-left: auto !important
       margin-right: auto !important
-      width: 80%
-      li
+
+      a
         display: block
         margin-left: auto !important
         margin-right: auto !important
         width: 80%
+        li
+          display: block
+          margin-left: auto !important
+          margin-right: auto !important
+          width: 80%
 
-      .text
-        width: auto
-        margin: 0px
+        .text
+          width: auto
+          margin: 0px
 
 @media (min-width: 768px)
-  ul
-    width: 100%
-    display: flex
+  .featured
+    ul
+      height: 140px
+      width: 100%
+      display: flex
 
-    li
-      width: calc(100%/3)
-      margin-top: 10px !important
-      border: none !important
-      margin-bottom: 20px
+      li
+        width: calc(100%/3)
+        margin-top: 10px !important
+        border: none !important
+        margin-bottom: 20px
 
-      .text
-        max-width: 380px
+        .text
+          max-width: 380px
 
 @media (min-width: 1000px)
   .featured
@@ -102,5 +104,6 @@
             font-size: 18px
 
 @media (min-width: 1200px)
-  ul
-    max-width: 1200px
+  .featured
+    ul
+      max-width: 1200px
