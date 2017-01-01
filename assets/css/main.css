@@ -356,7 +356,7 @@ section.subtitle {
 .how {
   position: relative;
   background-color: rgba(0, 153, 204, 0.6);
-  padding-bottom: 10px; }
+  padding-bottom: 20px; }
   .how h1.section-title {
     color: white; }
   .how .how-content .how-details .how-image {
@@ -380,7 +380,7 @@ section.subtitle {
       color: rgba(255, 255, 255, 0.8);
       text-align: center;
       font-size: 16px;
-      line-height: 20px; }
+      line-height: 24px; }
   .how .how-content .how-buttons {
     padding-bottom: 20px;
     margin: 10px auto 0;
@@ -850,3 +850,58 @@ footer {
       .partner ul.client-logos li img {
         max-width: 240px;
         max-height: 70px; } }
+
+.team {
+  position: relative;
+  background-color: rgba(0, 153, 204, 0.6);
+  padding-bottom: 10px; }
+  .team h1.section-title {
+    color: white; }
+  .team .team-content {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .team .team-content .team-member {
+      width: 250px;
+      margin: 10px 20px;
+      position: relative; }
+      .team .team-content .team-member .team-member-image {
+        border: 3px solid white;
+        display: block;
+        margin: 0px auto;
+        -webkit-border-radius: 200px;
+                border-radius: 200px;
+        width: 180px;
+        height: 180px;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-size: cover;
+        background-position: center; }
+      .team .team-content .team-member .team-member-details {
+        display: block;
+        color: white; }
+        .team .team-content .team-member .team-member-details h3 {
+          font-family: 'Open Sans';
+          font-size: 18px;
+          text-transform: uppercase;
+          text-align: center; }
+        .team .team-content .team-member .team-member-details p.position {
+          font-family: 'Open Sans';
+          font-size: 14px;
+          margin-top: -12px;
+          margin-bottom: 12px;
+          color: rgba(255, 255, 255, 0.75); }
+        .team .team-content .team-member .team-member-details p {
+          text-align: center;
+          font-family: 'Quicksand';
+          font-size: 16px;
+          line-height: 22px; }
