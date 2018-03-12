@@ -629,22 +629,18 @@ section.subtitle {
             border-radius: 5px; }
     .contact .row input[type=text]::-webkit-input-placeholder {
       opacity: 0.3;
-      padding-left: 10px;
       font-family: 'Open Sans';
       font-size: 16px; }
     .contact .row input[type=text]::-moz-placeholder {
       opacity: 0.3;
-      padding-left: 10px;
       font-family: 'Open Sans';
       font-size: 16px; }
     .contact .row input[type=text]:-ms-input-placeholder {
       opacity: 0.3;
-      padding-left: 10px;
       font-family: 'Open Sans';
       font-size: 16px; }
     .contact .row input[type=text]::placeholder {
       opacity: 0.3;
-      padding-left: 10px;
       font-family: 'Open Sans';
       font-size: 16px; }
   .contact .row input[type=submit] {
@@ -670,28 +666,20 @@ section.subtitle {
             border-radius: 5px; }
     .contact textarea::-webkit-input-placeholder {
       font-family: 'Open Sans';
-      font-size: 15px;
-      padding-top: 10px;
-      opacity: 0.3;
-      padding-left: 8px; }
+      font-size: 16px;
+      opacity: 0.3; }
     .contact textarea::-moz-placeholder {
       font-family: 'Open Sans';
-      font-size: 15px;
-      padding-top: 10px;
-      opacity: 0.3;
-      padding-left: 8px; }
+      font-size: 16px;
+      opacity: 0.3; }
     .contact textarea:-ms-input-placeholder {
       font-family: 'Open Sans';
-      font-size: 15px;
-      padding-top: 10px;
-      opacity: 0.3;
-      padding-left: 8px; }
+      font-size: 16px;
+      opacity: 0.3; }
     .contact textarea::placeholder {
       font-family: 'Open Sans';
-      font-size: 15px;
-      padding-top: 10px;
-      opacity: 0.3;
-      padding-left: 8px; }
+      font-size: 16px;
+      opacity: 0.3; }
   .contact textarea:focus, .contact input[type=text]:focus {
     outline-color: rgba(69, 158, 166, 0.9);
     -webkit-box-shadow: 0 0 5px rgba(69, 158, 166, 0.9);
@@ -702,12 +690,15 @@ section.subtitle {
     width: 780px;
     display: block;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding-left: 12px; }
   .contact .row textarea {
     width: 780px;
     display: block;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto;
+    padding-left: 12px;
+    padding-top: 12px; } }
 
 @media (min-width: 1000px) {
   .contact .row input[type=submit] {
